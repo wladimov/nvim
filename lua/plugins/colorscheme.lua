@@ -1,38 +1,6 @@
 return {
   {
     {
-      "xiyaowong/transparent.nvim",
-      config = function()
-        require("transparent").setup({
-          extra_groups = { -- table/string: additional groups that should be cleared
-            "Normal",
-            "NormalNC",
-            "Comment",
-            "Constant",
-            "Special",
-            "Identifier",
-            "Statement",
-            "PreProc",
-            "Type",
-            "Underlined",
-            "Todo",
-            "String",
-            "Function",
-            "Conditional",
-            "Repeat",
-            "Operator",
-            "Structure",
-            "LineNr",
-            "NonText",
-            "SignColumn",
-            "CursorLineNr",
-            "EndOfBuffer",
-          },
-          exclude_groups = {}, -- table: groups you don't want to clear
-        })
-      end,
-    },
-    {
       "catppuccin/nvim",
       name = "catppuccin",
       priority = 1000,
@@ -92,12 +60,27 @@ return {
         })
       end,
     },
+    -- TokyoNight theme
+    {
+      "folke/tokyonight.nvim",
+      lazy = true,
+      opts = {
+        style = "moon",             -- available styles: 'storm', 'moon', 'night', 'day'
+        transparent = true,         -- enables transparent background
+        terminal_colors = true,     -- enables terminal color support
+        styles = {
+          sidebars = "transparent", -- applies transparency to sidebars like nvim-tree, telescope, etc.
+          floats = "transparent",   -- applies transparency to floating windows
+        },
+      },
+    },
+
     {
       -- LazyVim configuration
       "LazyVim/LazyVim",
       opts = {
         -- Set the default color scheme
-        colorscheme = "kanagawa",
+        colorscheme = "tokyonight", -- catppuccin - kanagawa - tokyonight
       },
     },
   },
