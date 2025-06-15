@@ -23,4 +23,8 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     enabled = false,
   },
+  {
+    "echasnovski/mini.diff",
+    enabled = false,
+  },
 }

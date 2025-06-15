@@ -42,7 +42,7 @@ require("lazy").setup({
     -- Editor plugins
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
     { import = "lazyvim.plugins.extras.editor.mini-files" },
-    { import = "lazyvim.plugins.extras.editor.snacks_explorer" },
+    -- { import = "lazyvim.plugins.extras.editor.snacks_explorer" },
     { import = "lazyvim.plugins.extras.editor.snacks_picker" },
 
     -- Formatting plugins
@@ -64,8 +64,7 @@ require("lazy").setup({
 
     -- Coding plugins
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
-    { import = "lazyvim.plugins.extras.editor.mini-diff" },
-
+    --  { import = "lazyvim.plugins.extras.editor.mini-diff" },
     -- Utility plugins
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 
