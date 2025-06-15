@@ -1,5 +1,6 @@
 return {
   "zbirenbaum/copilot.lua",
+  enabled = false,
   optional = true,
   opts = function()
     require("copilot.api").status = require("copilot.status")
